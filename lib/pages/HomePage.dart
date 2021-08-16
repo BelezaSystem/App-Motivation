@@ -56,8 +56,58 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      body: Container(
-        color: Colors.red,
+      body: Column(
+        children: [
+          Expanded(
+            flex: 1,
+            child: Stack(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('images/telaDeFundo.jpg'),
+                      fit: BoxFit.cover
+                    )
+                    //child: Image.asset('images/telaDeFundo.jpg', fit: BoxFit.,)
+                  ),
+                ),
+
+                Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 150, horizontal: 25),
+                      child: Text("Faça o melhor que puder. Seja o melhor que puder. O resultado virá na mesma proporção de seu esforço.",
+                      textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 100, 0, 0),
+                      child: TextButton(onPressed: (){},
+                       child: Container(
+                         height: 30,
+                         width: 150,
+                         decoration: BoxDecoration(
+                           color: Color.fromRGBO(0xFFFFFFF, 0xFFFFFFF, 0xFFFFFFF, 0.3),
+                           borderRadius: BorderRadius.circular(50)
+                         ),
+                         child: Text("Mensagen",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.black54,
+                            ), 
+                            textAlign: TextAlign.center,
+                          ),
+                       )),
+                    )
+                  ],
+                )
+              ],
+            ),)
+        ],
       ),
     );
   }
