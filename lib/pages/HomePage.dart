@@ -44,12 +44,13 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               trailing: Container(
-                height: 48,
-                width: 48,
+                height: 58,
+                width: 58,
                 decoration: BoxDecoration(
                   color: Colors.black,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
+                child: Image.asset('images/logoMiniApp.png'),
               ),
             ),
           ),
