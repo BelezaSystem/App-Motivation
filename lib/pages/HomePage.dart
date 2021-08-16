@@ -12,9 +12,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(130),
+        preferredSize: Size.fromHeight(110),
         child: Container(
-          height: 130,
+          height: 110,
           color: Colors.black12,
           child: Center(
             child: ListTile(
